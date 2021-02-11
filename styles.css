@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    background-color: #f4f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER SECTION */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90rem;
+    margin: 0 auto;
+    background-color: #f1d1d0;
+    box-shadow: -1px 0px 5px 0px #000;
+    padding: 12px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.navbar-listing {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-item {
+    margin: 0 20px;
+}
+
+.navbar-link {
+    font-size: 17px;
+}
+
+@media screen and (max-width:768px) {
+    .navbar {
+        max-width: 70rem;
+        display: flex;
+        flex-direction: column;
+        align-items: inherit;
+    }
+
+    .navbar-toggler {
+        display: block;
+        padding: 5px 10px;
+        cursor: pointer;
+        border: none;
+        background: transparent;
+    }
+
+    .navbar-toggler:active,
+    .navbar-toggler:focus {
+    outline: none;
+    }
+
+    .navbar-toggler>.icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        margin: 5px auto;
+        transition: all 0.2s;
+        background-color: #000;
+    }
+
+    .navbar-toggler.on .icon-bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-toggler.on .icon-bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navbar-toggler.on .icon-bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-listing {
+        flex-direction: column;
+        display: none;
+    }
+
+    .show-navbar {
+        display: flex;
+        height: auto;
+    }
+
+    .navbar-item {
+        margin: 0;
+    }
+}
+
+/* HEADER SECTION */
